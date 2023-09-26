@@ -1,0 +1,40 @@
+{
+  "development": {
+    "port": 3000,
+    "localBaseUrl": "http://localhost:3000",
+    "store": {
+      "adapter": "sequelize",
+      "dialect": "sqlite3",
+      "url": "sqlite://./store.db"
+    },
+    "whitelist": ["https://benjessup-oasis.atlassian.net"],
+    "public": true,
+    "product": "jira",
+    "authentication": {
+      "method": "jwt",
+      "sharedSecret": "YOUR_SHARED_SECRET"
+    },
+    "boxClientId": "qvms2dv5i1159csmpy86qjap0aqtr29f",
+    "boxClientSecret": "OlfFvnwN4jFr6iFCWKlQWAKwBwTnwwKJ",
+    "boxRedirectUri": "https://7903-2600-1702-4fc7-ea0f-c9dc-ddec-bce2-54e7.ngrok-free.app/oauth-callback"
+  },
+  "production": {
+    "port": 3000,
+    "localBaseUrl": "https://7903-2600-1702-4fc7-ea0f-c9dc-ddec-bce2-54e7.ngrok-free.app",
+    "store": {
+      "adapter": "somePersistentAdapter",
+      "type": "someDatabase",
+      "url": "yourDatabaseUrl"
+    },
+    "whitelist": ["https://benjessup-oasis.atlassian.net"],
+    "public": true,
+    "product": "jira",
+    "authentication": {
+      "method": "jwt",
+      "sharedSecret": "YOUR_SHARED_SECRET"
+    },
+    "boxClientId": "qvms2dv5i1159csmpy86qjap0aqtr29f",
+    "boxClientSecret": "OlfFvnwN4jFr6iFCWKlQWAKwBwTnwwKJ",
+    "boxRedirectUri": "https://7903-2600-1702-4fc7-ea0f-c9dc-ddec-bce2-54e7.ngrok-free.app/oauth-callback"
+  }
+}

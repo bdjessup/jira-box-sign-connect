@@ -1,0 +1,24 @@
+{
+  "name": "Box Sign",
+  "description": "Box Sign integration for Jira",
+  "baseUrl": "https://benjessupoasis.atlassian.net/",
+  "key": "jira-box-sign",
+  "authentication": {
+    "type": "none"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "modules": {
+    "generalPages": [
+      {
+        "url": "/login",
+        "key": "box-login-page",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Box Sign"
+        }
+      }
+    ]
+  }
+}
